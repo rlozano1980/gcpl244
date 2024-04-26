@@ -18,4 +18,10 @@ view: fakeorders {
     type: count
     drill_fields: [orders.id]
   }
+
+
+  dimension: string_to_num_dim {
+    type: number
+    sql: CAST(${TABLE}.customer_id as INTEGER);;
+  }
 }

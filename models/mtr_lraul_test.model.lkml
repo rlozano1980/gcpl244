@@ -7,6 +7,11 @@ datagroup: mtr_lraul_test_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
+
+datagroup: dt_test {
+  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  max_cache_age: "3 minutes"
+}
 #dummy change2
 
 persist_with: mtr_lraul_test_default_datagroup
